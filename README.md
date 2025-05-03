@@ -4,6 +4,7 @@ An attempt to automate reconnaissance and integrate it in pipeline.
 Subdomain Enumeration:   
    - amass enum -brute -active -d domain.com -o amass-output.txt
    - subfinder -d example.com -o example_subdomains.txt
+   - cat amass-output.txt | dnsgen - | httprobe
 
 Active Hosts:   
    - cat example_subdomains.txt | httpx -o live_web_hosts.txt
