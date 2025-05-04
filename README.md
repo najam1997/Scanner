@@ -19,4 +19,7 @@ An attempt to automate reconnaissance and integrate it in pipeline.
 5. Port Scanning:
    - nmap -iL live_web_hosts.txt -p- --min-rate 1000 -oN nmap_full_scan.txt
   
-6. 
+6. Tech Detection:
+   - cat live_web_hosts.txt | httpx -tech-detect -o tech_fingerprint.txt
+  
+7. 
