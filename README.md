@@ -16,4 +16,7 @@ An attempt to automate reconnaissance and integrate it in pipeline.
 4. Images of the domains:
    - cat live_web_hosts.txt | aquatone
 
-5. 
+5. Port Scanning:
+   - nmap -iL live_web_hosts.txt -p- --min-rate 1000 -oN nmap_full_scan.txt
+  
+6. 
