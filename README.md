@@ -22,4 +22,12 @@ An attempt to automate reconnaissance and integrate it in pipeline.
 6. Tech Detection:
    - cat live_web_hosts.txt | httpx -tech-detect -o tech_fingerprint.txt
   
-7. 
+7. Directory Busting:
+   - ffuf -ac -v -u https://domain/FUZZ -w wordlist.txt
+   - gau example.com --subs --o gau_root_and_subs_urls.txt
+  
+8. Parameter Fuzzing:
+   - arjun -u https://target.example.com/api/users
+
+9. Javascript endpoints analysis:
+    - Linkfinder and secretfinder
