@@ -4,7 +4,7 @@ An attempt to automate reconnaissance and integrate it in pipeline.
 1. Subdomain Enumeration:   
    - amass enum -brute -active -d domain.com -o amass-output.txt
    - subfinder -d example.com -o example_subdomains.txt
-   - cat amass-output.txt | dnsgen - | httprobe
+   - cat amass-output.txt | dnsgen -
 
 2. Filter Out Duplicates:   
    - cat new-output.txt | anew old-output.txt
