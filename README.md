@@ -34,3 +34,6 @@ An attempt to automate reconnaissance and integrate it in pipeline.
 
 9. Javascript endpoints analysis:
     - Linkfinder and secretfinder
+
+10. Subdomain Takeover:
+    - subzy run --targets list_of_subs.txt
